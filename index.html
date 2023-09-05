@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Protection</title>
+</head>
+<body>
+    <h1>Enter Password to Access</h1>
+    <form id="passwordForm">
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button type="button" onclick="checkPassword()">Submit</button>
+    </form>
+
+    <script>
+        function checkPassword() {
+            const enteredPassword = document.getElementById("passwordInput").value;
+            // Replace 'your_password' with your actual password
+            if (enteredPassword === 'cobaindulu') {
+                window.location.href = 'https://vkelffk.github.io/your-repo-name/home.md';
+            } else {
+                alert('Incorrect password. Try again.');
+            }
+        }
+    </script>
+</body>
+</html>
